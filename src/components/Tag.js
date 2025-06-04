@@ -1,8 +1,8 @@
-import React from 'react'
+// import React from 'react'
 import './Tag.css';
-import axios from 'axios';
+// import axios from 'axios';
 import { useState } from 'react';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import Spinner from './Spinner';
 import useGif from '../hooks/useGif';
 
@@ -47,7 +47,7 @@ const Tag = () => {
         <h1 className='tag'>Random {tag} GIF</h1>
 
         {
-            loading? (<Spinner />) : (  <img src={gif}  className='gif_image'/>)
+            loading? (<Spinner />) : (  <img src={gif} alt='photo' className='gif_image'/>)
         }
 
         <input

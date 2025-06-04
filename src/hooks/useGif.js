@@ -1,4 +1,3 @@
-import React from 'react'
 import axios from 'axios';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -27,6 +26,8 @@ const randomMemeUrl=`https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
         setLoading(false);
     }
 
+
+// eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
        fetchData('car');
     }, [])

@@ -1,8 +1,8 @@
-import React from 'react'
+// import React from 'react'
 import './Random.css';
-import axios from 'axios';
-import { useState } from 'react';
-import { useEffect } from 'react';
+// import axios from 'axios';
+// import { useState } from 'react';
+// import { useEffect } from 'react';
 import Spinner from './Spinner';
 import useGif from '../hooks/useGif';
 
@@ -41,7 +41,7 @@ const Random = () => {
         <h1 className='random_heading'>A Random GIF</h1>
 
         {
-            loading? (<Spinner />) : (  <img src={gif}  className='gif_image'/>)
+            loading? (<Spinner />) : (  <img src={gif} alt='photo'  className='gif_image'/>)
         }
 
         {/* <img src={gif} width="450px"  /> */}
